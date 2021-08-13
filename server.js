@@ -7,9 +7,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(cors())
 app.use(express.json())                   
+
 app.use(session({
     secret: "my tasks",
-    cookie: {maxAge: 1000 * 60 * 60 * 24 /* one day delay */}
+    resave: false,
+    saveUninitialized: false,
+    cookie: {secure: true, maxAge: 1000 * 60 * 60 * 24 /* one day delay */}
 }))
 
 app.use(express.static(path.resolve(__dirname, 'build')))
