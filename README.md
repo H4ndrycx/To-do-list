@@ -13,4 +13,4 @@ What is Done:
 What is needed to do:
 - Polish inputs
 
-Hosting in https://to-do-list-one-phi.vercel.app/
+Hosting in https://h4ndrycx-to-do-list.herokuapp.com/
