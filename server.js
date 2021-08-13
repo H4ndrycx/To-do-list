@@ -12,7 +12,7 @@ app.use(session({
     secret: "my tasks",
     resave: false,
     saveUninitialized: false,
-    cookie: {secure: true, maxAge: 1000 * 60 * 60 * 24 /* one day delay */}
+    cookie: {maxAge: 1000 * 60 * 60 * 24 /* one day delay */}
 }))
 
 app.use(express.static(path.resolve(__dirname, 'build')))
